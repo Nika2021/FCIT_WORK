@@ -1,0 +1,177 @@
+
+div {
+    
+}
+div:hover{
+    transform:translateX(100px) ; /*——ув на 100пкс*/
+}
+
+
+/*ease=slow start, fast, slow end
+ease-in=slow start
+ease-out=alow end
+ease-in-out=slow start, fast, slow end
+linear=same speed start stop end*/
+.easy {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s; /*—к≥льки часу буде в≥дбуватисть д≥€*/
+}
+.linear {
+    transition-timing-function: linear;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s; /*—к≥льки часу буде в≥дбуватисть д≥€*/
+}
+.easy-in {
+    transition-timing-function: ease-in;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s; /*—к≥льки часу буде в≥дбуватисть д≥€*/
+}
+.easy-out {
+    transition-timing-function: ease-out;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s; /*—к≥льки часу буде в≥дбуватисть д≥€*/
+}
+.easy-in-out {
+    transition-timing-function: ease-in-out;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s;
+}
+.transition {
+    background: red;
+    transition: all 2s linear;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s;
+}
+.transition:hover{
+    background:yellow;
+    transform:translateX(100px;)
+}
+.animation {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s;
+    /*   background: green;
+    animation-name:move;
+    animation-duration:6s;
+    animation-iteration-count:3;*/
+    animation: move 5s infinite;
+}
+
+
+@keyframes move{
+    0%{
+        transform:translateX(20px);
+    }
+    25% {
+        transform: translateX(50px);
+        background: yellow;
+    }
+    50% {
+        transform: translateX(70px);
+        background:pink;
+    }
+    75% {
+        transform: translateX(50px);
+        background: red;
+    }
+    100% {
+        transform: translateX(0px);
+        background:green;
+        )
+    }
+}
+.animation2 {
+    background: blue;
+    animation: move2 5s 2;
+    animation-fill-mode: forwards;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 15px;
+    transition: all 1s; /*—к≥льки часу буде в≥дбуватисть д≥€*/
+}
+@keyframes move2{
+    0%{
+        opacity:0;
+    }
+    25%{
+        transform:translateX(200px);
+        opacity:0.25;
+    }
+    50% {
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 0.25;
+    }
+}
+
+
+*{
+
+}
+
+.heading{
+    color:red;
+}
+.text{
+    color:greenyellow;
+}
+.main_text{
+    color:blue;
+}
+.second_heading{
+    color:darkred;
+}
+.third_heading{
+
+}
+/*
+.one{
+    background:linear-gradient(red,green);
+}
+.two {
+    background: linear-gradient(to top, red,green);
+}
+.three {
+    background: linear-gradient(150deg, red,green);
+}
+.five {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9));
+}
+.six {
+    background: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.9));
+}*/
