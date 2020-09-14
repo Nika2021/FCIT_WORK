@@ -1,0 +1,7 @@
+var anyString = '3806737879';
+let len = anyString.length
+console.log(len)
+for (let i = 0; i <= len; i++) {
+    console.log("'" + i + "'"+"="+anyString.charAt(i))
+}
+console.log(anyString.charAt(0) + anyString.charAt(1) + anyString.charAt(2) + "-" + anyString.charAt(3) + anyString.charAt(4) + "-" + anyString.charAt(5) + anyString.charAt(6) + "-"+ anyString.charAt(7) + anyString.charAt(8) + anyString.charAt(9))
