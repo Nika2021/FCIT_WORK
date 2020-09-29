@@ -1,0 +1,258 @@
+﻿<DOCTYPE hmtl>
+
+    <html>
+    <head>
+        <title>SHEVCHENKO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <link rel="stylesheet" href="./style.css" />
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li>
+                    <a class="nav-link" href="#Beginners">Beginner's tutorials</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Advanced">Advanced topics</a>
+                </li>
+                <li><a class="nav-link" href="#Reference">References</a></li>
+                <li><a class="nav-link" href="#Topics">Related topics</a></li>
+                <li>
+                    <a class="nav-link" href="#Atr">HTML attribute</a>
+                </li>
+                <li><a class="nav-link" href="#Elements">HTML element</a></li>
+                <li><a class="nav-link" href="#Miscell">Miscellaneous HTML Tags</a></li>
+                <li><a class="nav-link" href="#Obselete">Obselete</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        <b>HTML</b> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                        "HyperText" refers to links that connect web pages to one another, either within a single website or between websites.
+                        Links are a fundamental aspect of the Web.
+                        By uploading content to the Internet and linking it to pages created by other people,
+                        you become an active participant in the World Wide Web.
+
+                    </p>
+                    HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
+                    HTML markup includes special "elements"
+                    Tags in HTML are case insensitive. That is, they can be written in uppercase, lowercase, or a mixture.
+                    <p>
+                        The articles below will help you learn more about HTML.
+                    </p>
+                    <ul>
+                        <li>
+                            HTML Introduction
+
+                        </li>
+                        <p>
+                            If you're new to Web development, be sure to read our HTML Basics article to learn what HTML is and how to use it.
+                        </p>
+                    </ul>
+                    <ul>
+                        <li>
+                            HTML Tutorials
+
+                        </li>
+                        <p>For articles about how to use HTML, as well as tutorials and complete examples</p>
+                    </ul>
+                    <ul>
+                        <li>
+                            HTML Reference
+                        </li>
+                    </ul>
+                        <p>In our extensive HTML reference section, you'll find the details about every element and attribute in HTML.</p>
+                    
+                </article>
+            </section>
+            <section class="main-section" id="Beginners">
+                <header>Beginner's tutorials</header>
+                <article>
+                    <p>To build websites, you should know about HTML — the fundamental technology used to define the structure of a webpage. HTML is used to specify whether your web content should be recognized as a paragraph, list, heading, link, image, multimedia player, form, or one of many other available elements or even a new element that you define.</p>
+                    <p>Before starting this topic, you should have at least basic familiarity with using computers and using the web passively (i.e. just looking at it, consuming the content). You should have a basic work environment set up as detailed in Installing basic software, and understand how to create and manage files, as detailed in Dealing with files — both are parts of our Getting started with the web complete beginner's module.</p>
+                    After learning HTML, you can then move on to learning about more advanced topics such as:
+                    <ul>
+                        <li>
+                            <b>CSS</b>, and how to use it to style HTML (for example alter your text size and fonts used, add borders and drop shadows, layout your page with multiple columns, add animations and other visual effects.).
+                        </li>
+                        <li>
+                            <b>JavaScript</b>, and how to use it to add dynamic functionality to web pages (for example find your location and plot it on a map, make UI elements appear/disappear when you toggle a button, save users' data locally on their computers, and much much more.)
+                            Modules
+                        </li>
+                        <li>
+                            A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.
+                        </li>
+
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Advanced">
+                <header>Advanced topic</header>
+                <article>
+                    <p>
+                        HTML provides a crossorigin attribute for images that, in combination with an appropriate CORS header, allows images defined by the element that are loaded from foreign origins to be used in a
+                            as if they had been loaded from the current origin.
+
+                            See CORS settings attributes for details on how the crossorigin attribute is used.
+                    </p>
+
+                    <p>
+                        Because the pixels in a canvas's bitmap can come from a variety of sources, including images or videos retrieved from other hosts, it's inevitable that security problems may arise.
+                        As soon as you draw into a canvas any data that was loaded from another origin without CORS approval, the canvas becomes tainted. A tainted canvas is one which is no longer considered secure, and any attempts to retrieve image data back from the canvas will cause an exception to be thrown.
+                    </p>
+                    <p>
+                        If the foreign content comes from an image obtained from either as HTMLCanvasElement or ImageBitMap, and the image source doesn't meet the same origin rules, attempts to read the canvas's contents are blocked.
+                    </p>
+                    <p>
+                        Calling any of the following on a tainted canvas will result in an error:
+                    </p>
+                    <ul>
+                        <li>
+                            Calling getImageData() on the canvas's context
+                        </li>
+                        <li>
+                            Calling toBlob() on the "canvas" element itself
+                        </li>
+                        <li>
+                            Calling toDataURL() on the canvas
+                        </li>
+                    </ul>
+                    <p>Attempting any of these when the canvas is tainted will cause a <b>SecurityError</b> to be thrown. This protects users from having private data exposed by using images to pull information from remote web sites without permission.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    HTML (Hypertext Markup Language) elements historically were categorized as either "block-level" elements or "inline" elements. Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. In this article, we'll examine HTML inline elements and how they differ from block-level elements.
+                    This is most easily demonstrated with a simple example. First, some simple CSS that we'll be using:".highlight {
+                    background-color:#ee3;
+                    }"
+                </article>
+                <header>DIV</header>
+                <p>
+                    The HTML Content Division element is the generic container for flow content. It has no effect on the content or layout until styled using CSS.
+                </p>
+                <code>
+                    div class="warning"
+                        img src="/media/examples/leopard.jpg"
+                             altt="An intimidating leopard.">
+                        pBeware of the leopard /p
+                    /div
+                </code>
+                <p>As a "pure" container, the div element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on.</p>
+            </section>
+            <section class="main-section" id="Topics">
+                <header>Applying color</header>
+                <p>
+                    The use of color is a fundamental form of human expression. Children experiment with color before they even have the manual dexterity to draw. Maybe that's why color is one of the first things people often want to experiment with when learning to develop web sites. With CSS, there are lots of ways to add color to your HTML elements to create just the look you want. This article is a primer introducing each of the ways CSS color can be used in HTML.
+                </p>
+                <p>
+                    Fortunately, adding color to your HTML is actually really easy to do, and you can add color to nearly anything.
+                </p>
+                <p>
+                    We're going to touch on most of what you'll need to know when using color, including a list of what you can color and what CSS properties are involved, how you describe colors, and how to actually use colors both in stylesheets and in scripts. We'll also take a look at how to let the user pick a color.
+
+                    Then we'll wrap things up with a brief discussion of how to use color wisely: how to select appropriate colors, keeping in mind the needs of people with differing visual capabilities.
+                </p>
+            </section>
+            <section class="main-section" id="Atr">
+                <header>HTML Atributes</header>
+                <article>
+                    <p>
+                        HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a<i>modifier of an HTML</i>  element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an <i>HTML start tag.</i>
+                    </p>
+                    <p>
+                        Several basic attributes types have been recognized, including: (1) required attributes, needed by a particular element type for that element type to function correctly; (2) optional attributes, used to modify the default functionality of an element type; (3) standard attributes, supported by many element types; and (4) event attributes, used to cause element types to specify scripts to be run under specific circumstances.
+                    </p>
+                    <p>
+                        Some attribute types function differently when used to modify different element types. For example, the attribute name is used by several element types, but has slightly different functions in each.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Elements">
+                <header>HTML elements</header>
+                <article>
+                    <p>
+                        <i>
+                            This article is about the HTML elements in general. For information on how to format Wikipedia entries, see Help:Wiki markup and Help:HTML in wikitext.
+                            "nobr" redirects here. For the chemical compound NOBr, see Nitrosyl bromide.
+                            "Font color" redirects here. For OpenType fonts featuring multicolored glyphs, see OpenType § Color fonts.
+                        </i>
+
+                    </p>
+                    An HTML element is a type of HTML (Hypertext Markup Language) document component, one of several types of HTML nodes (there are also text nodes, comment nodes and others).HTML document is composed of a tree of simple HTML nodes, such as text nodes, and HTML elements, which add semantics and formatting to parts of document (e.g., make text bold, organize it into paragraphs, lists and tables, or embed hyperlinks and images). Each element can have HTML attributes specified. Elements can also have content, including other elements and text.
+                    <p>
+                        An <b>HTML element</b> is a type of HTML (Hypertext Markup Language) document component, one of several types of HTML nodes (there are also text nodes, comment nodes and others).<b>HTML document</b> is composed of a tree of simple HTML nodes, such as text nodes, and HTML elements, which add semantics and formatting to parts of document (e.g., make text bold, organize it into paragraphs, lists and tables, or embed hyperlinks and images). Each element can have HTML attributes specified. Elements can also have content, including other elements and text.
+                    </p>
+
+                </article>
+            </section>
+            <section class="main-section" id="Miscell">
+                <header>Miscellaneous HTML Tags</header>
+                <article>
+                    <ul>
+                        <li>
+                            Comment
+                        </li>
+                    </ul>
+                    <p>
+                        Anything between the comment tags is not displayed by the browser, so they are used to document your html code, or sometimes for hiding sections of html that you don't want to delete just yet.
+                    </p>
+                    <ul>
+                        <li>
+                            Document Type
+                        </li>
+                    </ul>
+                    <p>The purpose of the DOCTYPE declaration is to define the type of HTML document to web browsers, more specifically, which versions of HTML to use. The DOCTYPE should appear on the first line of a file, even before the html tag, and will typically be similar to one of the following:</p>
+                    <ul>
+                        <li>
+                            META Tags
+                        </li>
+                    </ul>
+                    <p>Meta tags contain information about the page that does not need to be displayed, but it still used by search engines and other web crawlers. They are typically used to give search engines a brief description of the page, as well as the important keywords on it. </p>
+
+
+                    <p>
+                        Consequently, you can access global variables declared in one window or
+                        frame from another window or frame by specifying the window or frame
+                        name. For example, if a variable called phoneNumber is declared in a
+                        document, you can refer to this variable from an iframe as
+                        parent.phoneNumber.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Obselete">
+                <header>Obsolete features</header>
+                <article>
+                    <p>
+                        Features listed in this section will trigger warnings in conformance checkers.
+
+Authors should not specify a border attribute on an img element. If the attribute is present, its value must be the string "0". CSS should be used instead.
+
+Authors should not specify a charset attribute on a script element. If the attribute is present, its value must be an ASCII case-insensitive match for "utf-8". (This has no effect in a document that conforms to the requirements elsewhere in this standard of being encoded as UTF-8.)
+                    </p>
+
+                    <p>
+                        Authors should not specify a language attribute on a script element. If the attribute is present, its value must be an ASCII case-insensitive match for the string "JavaScript" and either the type attribute must be omitted or its value must be an ASCII case-insensitive match for the string "text/javascript". The attribute should be entirely omitted instead (with the value "JavaScript", it has no effect), or replaced with use of the type attribute.
+                    </p>
+
+                    <p>
+                        Authors should not specify a value for the type attribute on script elements that is the empty string or a JavaScript MIME type essence match. Instead, they should omit the attribute, which has the same effect.
+
+                        Authors should not specify a type attribute on a style element. If the attribute is present, its value must be an ASCII case-insensitive match for "text/css".
+                    </p>
+                </article>
+            </section>
+            
+        </main>
+
+
+    </body>
+</html>
+
