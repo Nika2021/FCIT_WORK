@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fight!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <img class="logo" title="Reset Game" src="https://svtfoe-fan.azurewebsites.net/images/logo.png" alt="star butterfly">
+        </header>
+        <div class="playground">
+            <div>
+                <div class="pokemon character">
+                    <span class="lvl">Lv. 1</span>
+
+                    
+
+                    <img src="https://vignette.wikia.nocookie.net/monstermovies/images/7/7b/Ludo_%28Star_vs._the_Forces_of_Evil%29.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/451/window-height/450?cb=20150531215007" class="sprite">
+                    <div class="details">
+                        <h2 class="name" id="name-character">
+                            ludo
+                        </h2>
+                        <div class="hp">
+                            <div class="bar">
+                                <div class="health" id="progressbar-character" style="width: 100%;"></div>
+                            </div>
+                            <span class="text" id="health-character">100 / 100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button" id="character-btn-kick">
+                        Jolt Lightning
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="pokemon enemy">
+                    <span class="lvl">Lv. 1</span>
+                    <img src="https://i.pinimg.com/236x/7e/82/b4/7e82b482fb3c62e042eb3a82abf135e5.jpg" class="sprite">
+
+                    <div class="details">
+                        <h2 class="name" id="name-enemy">
+                            Star
+                        </h2>
+                        <div class="hp">
+                            <div class="bar">
+                                <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+                            </div>
+                            <span class="text" id="health-enemy">100 / 100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button" id="enemy-btn-kick">
+                        Fire Ball
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="control">
+            <button  onClick="window.location.reload();" class="button">
+                Play!
+            </button>
+        </div>
+        
+    </div>
+    <div>
+        <input type="button" id="bn" onmousedown="viewDiv()">
+        <div id="div1"><b>Lets try again!</b></div>
+    </div>
+
+  <div class="catch_screen">
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
